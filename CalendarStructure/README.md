@@ -1,1 +1,1 @@
-##Project folder for the Calendar Structure ##
+Project folder for the Calendar Structure 
