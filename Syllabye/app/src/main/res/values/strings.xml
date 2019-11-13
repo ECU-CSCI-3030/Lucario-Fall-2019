@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Syllabye</string>
+    <string name="calendar_button">Calendar</string>
+    <string name="reminders_button">Reminders</string>
+    <string name="upload_button">Upload File</string>
+    <string name="settings_button">Settings</string>
+</resources>
