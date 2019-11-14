@@ -33,6 +33,43 @@ public class Test
 		caltest.addTask(month, day, automatamidterm);
 		caltest.addTask(month, day, gdmidterm);
 		caltest.addTask(month, day, mlmidterm);
+
+		CalendarList callist = new CalendarList();
+
+		callist.addCalendar(caltest);
+
+		try
+		{
+			callist.removeCal(2019);
+		}
+		catch(CalendarNotFoundException e)
+		{
+			System.out.println(e);
+			System.out.println("remove issue");
+		}
+
+
+		callist.addCalendar(caltest);
+
+		Calendar caltest2 = caltest;
+
+
+
+
+		callist.replaceCal(caltest2);
+
+
+
+
+		try
+		{
+			caltest = callist.getCalendar(2019);
+		}
+		catch(CalendarNotFoundException e)
+		{
+			System.out.println(e);
+		}
+
 		
 		TaskList tltest = caltest.getTasks(month, day);
 		
