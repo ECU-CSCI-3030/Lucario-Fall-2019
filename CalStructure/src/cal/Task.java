@@ -64,7 +64,16 @@ public class Task
 	 * isEqual Method
 	 * -------------------------------------
 	 */
-	
+
+	/**
+	 * isEqual(Task t)
+	 *
+	 * Returns true if the Task calling the method is equal to Task 't'.
+	 * Returns false if not.
+	 *
+	 * @param t
+	 * @return
+	 */
 	public boolean isEqual(Task t)
 	{
 		String atest1 = this.act.toLowerCase();
