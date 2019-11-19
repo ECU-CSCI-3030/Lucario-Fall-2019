@@ -2,37 +2,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/startscreen" >
 
-    <Button
-        android:id="@+id/calendar_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/calendar_button" />
 
-    <Button
-        android:id="@+id/reminders_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/calendar_button"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/reminders_button" />
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="165dp"
+            android:layout_marginBottom="10dp"
 
-    <Button
-        android:id="@+id/upload_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/reminders_button"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/upload_button" />
+            android:text="@string/calendar_button"
+            android:textColor="#FFF"
+            android:background="@color/colorButton"
+            />
 
-    <Button
-        android:id="@+id/settings_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/upload_button"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/settings_button" />
+        <Button
+            android:id="@+id/reminders_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+
+            android:text="@string/reminders_button"
+            android:textColor="#FFF"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminders_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+
+            android:text="@string/upload_button"
+            android:textColor="#FFF"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upload_button"
+            android:layout_gravity="center_horizontal"
+
+            android:text="@string/settings_button"
+            android:textColor="#FFF"
+            android:background="@color/colorButton"/>
+
+
 
 </RelativeLayout>
