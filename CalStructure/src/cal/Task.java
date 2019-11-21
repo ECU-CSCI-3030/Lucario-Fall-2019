@@ -103,8 +103,9 @@ public class Task
 	 * Midterm
 	 * CSCI 3030
 	 * 
-	 * @overrides toString
+	 *
 	 */
+	@Override
 	public String toString()
 	{
 		return act + "\n" + course;
