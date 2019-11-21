@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="" />
+    <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/Calendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/CalendarList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/CalendarList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Month.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/Month.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/CalendarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/CalendarList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Month.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Test.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +29,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TXU9Lu0iGt84I5b7WalvVvOUhC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,10 +89,27 @@
       <option name="presentableId" value="Default" />
       <updated>1573605781775</updated>
       <workItem from="1573605785883" duration="8212000" />
+      <workItem from="1573744254353" duration="2338000" />
+      <workItem from="1573758505509" duration="4656000" />
+      <workItem from="1574049712751" duration="2505000" />
+      <workItem from="1574054354167" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

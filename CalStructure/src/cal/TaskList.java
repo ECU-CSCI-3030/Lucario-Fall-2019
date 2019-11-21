@@ -14,13 +14,26 @@ public class TaskList
 {
 	private LinkedList<Task> tasklist = new LinkedList<Task>();
 
+
+	/**
+	 * addTask(t)
+	 *
+	 * Adds Task 't' to the TaskList
+	 *
+	 * @param t
+	 */
 	public void addTask(Task t)
 	{
 		tasklist.add(t);
 	}
 
 
-
+	/**
+	 * removeTask(t)
+	 *
+	 * Removes all instances of Task 't' from the TaskList.
+	 * @param t
+	 */
 	public void removeTask(Task t)
 	{
 		Iterator<Task> iter = tasklist.iterator();
@@ -47,7 +60,7 @@ public class TaskList
 	/**
 	 * clearTasks()
 	 * 
-	 * clears the task list. 
+	 * Removes all Tasks in the TaskList.
 	 */
 	public void clearTasks()
 	{
@@ -55,7 +68,12 @@ public class TaskList
 	}
 
 
-
+	/**
+	 * printTasks()
+	 *
+	 * Prints all the Tasks in the TaskList.
+	 * Prints the Tasks in the same format as Task.toString()
+	 */
 	public void printTasks()
 	{
 		if(tasklist.isEmpty())
