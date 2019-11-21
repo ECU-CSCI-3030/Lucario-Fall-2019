@@ -13,8 +13,6 @@
  * 
  */
 
-package tess;
-
 import java.io.File;
 import net.sourceforge.tess4j.*;
 
@@ -55,7 +53,7 @@ public class TessOCR
 		//replace string with your fileName inside of new File
 		File imageFile = new File("testIMG04.jpg");
 		ITesseract instance = new Tesseract();
-    //replace path with your path to Tess4J
+                //replace path with your path to Tess4J
 		instance.setDatapath("C:\\Users\\Chick3n\\Desktop\\ECU Fall 2019\\Software Engineering\\Syllabye\\Tess4J");
 		instance.setLanguage("eng");
 		
