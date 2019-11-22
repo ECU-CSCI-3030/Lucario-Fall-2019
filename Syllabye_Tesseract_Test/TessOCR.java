@@ -7,6 +7,9 @@
  * For more documentation on Tesseract, visit
  * https://github.com/tesseract-ocr/tesseract/wiki/Documentation
  * 
+ * To download the Tesseract wrapper for Java, visit
+ * http://tess4j.sourceforge.net/
+ * 
  * To use:
  * 		Create an instance of TessOCR(fileName).
  * 		Do object.tessCall() to use Tesseract's doOCR function.
