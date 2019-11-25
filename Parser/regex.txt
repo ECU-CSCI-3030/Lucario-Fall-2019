@@ -1,0 +1,28 @@
+#Note that \\ is required when setting pattern as a string but not when typing in your regex
+#Date format: dd|d m/Month yyyy where 1900 <= yyyy <= 2999
+#Example: 30 (j|J)anuary 2015; 6 (s|S)eptember 2019
+([0-2]\\d|3[0-1]|[1-9]) (?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?) (?:19\d\d|2\d{3})
+#
+#Not sure if this format will be used
+#Date format: m/Month yyyy
+#Example: (j|J)anuary 2015
+(?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?) (?:19\d\d|2\d{3})
+#
+#Date format: dd|d m/Month
+#Example: 15 September; 6 December
+(?:[0-2]\d|3[0-1]|[1-9]) (?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?)
+#
+#Date format: mm/dd/yyyy
+#Example: 05/25/1977; 12/30/2055
+(?:0[1-9]|1[0-2])/(?:[0-2]\d|3[0-1])/(?:19\d{2}|2\d{3})
+#
+#Date format: mm/dd/yy
+#Example: 05/25/19
+(?:0[1-9]|1[0-2])/(?:[0-2]\d|3[0-1])/(?:\d{2})
+#
+#Date format: mm/dd|mm/d
+#Example: 
+#
+#Date format: dayName, m/Month. dd (, and . are optional)
+#Example: Monday, Jan. 19; Monday, January 19
+([sS]unday?|[mM]onday?|[tT]uesday?|[wW]ednesday?|[tT]hursday?|[fF]riday?|[sS]aturday?),? ((?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?))(\\.?) ([0-2]\\d|3[0-1]|[1-9])
