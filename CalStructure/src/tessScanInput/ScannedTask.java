@@ -1,10 +1,22 @@
+/**
+ * ScannedTask
+ *
+ * Holds an act and date as a String.
+ * Also holds a month and day as an int.
+ * Used in conjunction with the ScanList class to input into the Calendars Structure.
+ *
+ * @author Tristen Schuler
+ */
+
+
 package tessScanInput;
 
-public class ScannedTask
-{
-    String act;
-    String cname; //cname represents the coursename
-    String date;
+public class ScannedTask {
+    private String act;
+    private String date;
+    private int month;
+    private int day;
+
 
 
     /*
@@ -13,15 +25,17 @@ public class ScannedTask
     -------------------------------------
      */
 
-    public ScannedTask ()
+    public ScannedTask()
     {
-        act = date = cname = "";
+        act = date = "";
+        month = day = 0;
     }
 
-    public ScannedTask(String date, String cname)
+    public ScannedTask(int month, int day, int year)
     {
-        this.date = date;
-        this.cname = cname;
+        this.month = month;
+        this.day = day;
+        date = month + "/" + day + "/" + year;
     }
 
 
@@ -39,14 +53,6 @@ public class ScannedTask
         this.act = act;
     }
 
-    public String getCname() {
-        return cname;
-    }
-
-    public void setCname(String cname) {
-        this.cname = cname;
-    }
-
     public String getDate() {
         return date;
     }
@@ -55,30 +61,19 @@ public class ScannedTask
         this.date = date;
     }
 
+    public int getMonth() {
+        return month;
+    }
 
-    /**
-     * toString()
-     *
-     * Returns a string of containing this.act , this.cname, and this.date.
-     *
-     * In the following format:
-     *
-     * act
-     * cname
-     * date
-     *
-     * Example:
-     *
-     * Final
-     * CSCI 3700
-     * 12/2/2019
-     *
-     *
-     * @return
-     */
-    @Override
-    public String toString()
-    {
-        return act + "\n" + cname + "\n" + date;
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
     }
 }
