@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.ecu.cs.syllabye">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UploadActivity"></activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".RemindersActivity" />
+        <activity android:name=".UploadActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RemindersActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".SyllabyeActivity">
+        <activity android:name=".SyllabyeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

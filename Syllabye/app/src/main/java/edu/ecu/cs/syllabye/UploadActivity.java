@@ -31,7 +31,7 @@ public class UploadActivity extends AppCompatActivity {
 
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.M &&
                 checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-        != PackageManager.PERMISSION_GRANTED) {
+                        != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1001);
         }
         mFileButton = (Button) findViewById(R.id.fileButton);
@@ -58,7 +58,6 @@ public class UploadActivity extends AppCompatActivity {
             String filePath = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
             // Do anything with file
             mFileText.setText(filePath);
-            mFileText.setTextColor(Color.RED);
         }
     }
 
