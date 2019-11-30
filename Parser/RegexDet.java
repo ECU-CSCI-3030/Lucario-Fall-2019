@@ -19,14 +19,6 @@ import java.time.temporal.TemporalAccessor;
 import java.io.*;
 import java.util.regex.*;
 
-
-/**
- * Demonstrates how to extract multiple "groups" from a given string
- * using regular expressions and the Pattern and Matcher classes.
- * 
- * Note: "\\S" means "A non-whitespace character".
- * @see http://java.sun.com/j2se/1.5.0/docs/api/java/util/regex/Pattern.html
- */
 public class RegexDet {
 	public static void main(String[] args) throws IOException {
 		
