@@ -1,9 +1,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/upload">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/fileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="filepath" />
 
+    <Button
+        android:id="@+id/fileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File to Upload" />
+
+    <Button
+        android:id="@+id/uploadFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload" />
+
+</LinearLayout>
