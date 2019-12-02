@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Calendar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/CalendarList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/CalendarNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Month.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cal/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tessScanInput/ScannedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tessScanInput/ScannedTask.java" afterDir="false" />
     </list>
@@ -91,7 +83,10 @@
       <workItem from="1574049514531" duration="52000" />
       <workItem from="1574298237543" duration="2073000" />
       <workItem from="1574489446580" duration="176000" />
-      <workItem from="1574760442941" duration="2626000" />
+      <workItem from="1574760442941" duration="3447000" />
+      <workItem from="1575164804716" duration="4000" />
+      <workItem from="1575316837292" duration="10000" />
+      <workItem from="1575316876286" duration="3839000" />
     </task>
     <servers />
   </component>

@@ -36,6 +36,7 @@ public class ScannedTask {
         this.month = month;
         this.day = day;
         date = month + "/" + day + "/" + year;
+        act = "";
     }
 
 
