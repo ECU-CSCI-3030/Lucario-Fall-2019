@@ -26,6 +26,8 @@ public class ScanList
 
 
     // CONSTRUCTORS
+
+    //THIS CONSTRUCTOR SHOULD ONLY BE USED FOR TESTING PURPOSES.
     public ScanList()
     {
         scanlist = new LinkedList<ScannedTask>();
