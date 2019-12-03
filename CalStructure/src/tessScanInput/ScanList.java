@@ -137,4 +137,23 @@ public class ScanList
     {
         scanlist.clear();
     }
+
+
+    /**
+     * getYear()
+     * @return The year of the ScanList
+     */
+    public int getYear()
+    {
+        return this.year;
+    }
+
+    /**
+     * getCname()
+     * @return The course name of the ScanList
+     */
+    public String getCname() {
+        return cname;
+    }
 }
+

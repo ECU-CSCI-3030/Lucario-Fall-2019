@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +85,8 @@
       <workItem from="1574760442941" duration="3447000" />
       <workItem from="1575164804716" duration="4000" />
       <workItem from="1575316837292" duration="10000" />
-      <workItem from="1575316876286" duration="4304000" />
+      <workItem from="1575316876286" duration="4442000" />
+      <workItem from="1575367532484" duration="180000" />
     </task>
     <servers />
   </component>
