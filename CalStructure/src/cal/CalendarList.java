@@ -11,6 +11,8 @@ package cal;
 
 
 
+import com.sun.deploy.security.SelectableSecurityManager;
+
 import java.util.*;
 
 
@@ -19,6 +21,7 @@ public class CalendarList
 
     private LinkedList<Calendar> calendars;
 
+    // Constructor
     public CalendarList()
     {
         calendars = new LinkedList<Calendar>();
@@ -273,13 +276,153 @@ public class CalendarList
     }
 
 
+    /**
+     * dateCheck(month,day,year)
+     *
+     * Determines whether a date exists. Returns true if the date exists, False if not.
+     * @param month
+     * @param day
+     * @param year
+     *
+     * @return True if date exist, False if not.
+     */
+    private boolean dateCheck(int month, int day, int year)
+    {
+        if (month >= 1 && month <= 12)
+        {
+            return checkDay(month,day,year);
+        }
+        else
+            return false;
+    }
 
 
+    /**
+     * isLeapYear(year)
+     *
+     * Determines whether a given year is a leap year
+     * @param year
+     * @return True if 'year' is a leap year. False if not.
+     */
+    private boolean isLeapYear(int year)
+    {
+        if (year%4==0)
+            return true;
+        else
+            return false;
+    }
 
 
-
-
-
+    /**
+     * checkDay(month,day,year)
+     *
+     * Determines whether the 'day' given is in the 'month' given,
+     * during the 'year' given.
+     *
+     * @param month
+     * @param day
+     * @param year
+     * @return True if the 'day' is in the 'month' during 'year'. False if not.
+     */
+    private boolean checkDay(int month, int day, int year)
+    {
+        if(month == 1)
+        {
+            if(day >= 1 && day<=31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 2)
+        {
+            if(isLeapYear(year))
+            {
+                if(day >= 1 && day<=29)
+                    return true;
+                else
+                    return false;
+            }
+            else
+            {
+                if(day >= 1 && day<=28)
+                    return true;
+                else
+                    return false;
+            }
+        }
+        else if(month == 3)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 4)
+        {
+            if (day >= 1 && day <= 30)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 5)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 6)
+        {
+            if (day >= 1 && day <= 30)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 7)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 8)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 9)
+        {
+            if (day >= 1 && day <= 30)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 10)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 11)
+        {
+            if (day >= 1 && day <= 30)
+                return true;
+            else
+                return false;
+        }
+        else if(month == 12)
+        {
+            if (day >= 1 && day <= 31)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
 
 
 
