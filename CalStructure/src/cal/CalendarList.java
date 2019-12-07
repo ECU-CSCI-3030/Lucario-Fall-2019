@@ -217,14 +217,21 @@ public class CalendarList
      */
     public void addTask(int month, int day, int year, Task t)
     {
-        try
+        if(!dateCheck(month,day,year))
         {
-            this.getCalendar(year).addTask(month, day, t);
+            System.out.println(month +"/" + day +"/" + year +" is not a valid date. ");
         }
-        catch (CalendarNotFoundException e)
+        else
         {
-            System.out.println(e);
-            System.out.println("ERROR IN CalendarList.addTask()");
+            try
+            {
+                this.getCalendar(year).addTask(month, day, t);
+            }
+            catch (CalendarNotFoundException e)
+            {
+                System.out.println(e);
+                System.out.println("ERROR IN CalendarList.addTask()");
+            }
         }
     }
 
