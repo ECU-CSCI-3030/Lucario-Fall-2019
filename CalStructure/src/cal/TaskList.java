@@ -1,7 +1,7 @@
 
 /**
  * TaskList
- * 
+ *
  * Represents a list of tasks in the calendar structure. 
  * @author Tristen Schuler
  */
@@ -10,7 +10,7 @@ package cal;
 
 import java.util.*;
 
-public class TaskList 
+public class TaskList
 {
 	private LinkedList<Task> tasklist = new LinkedList<Task>();
 
@@ -53,13 +53,13 @@ public class TaskList
 				else
 					break;
 			}
-		}	
+		}
 	}
 
 
 	/**
 	 * clearTasks()
-	 * 
+	 *
 	 * Removes all Tasks in the TaskList.
 	 */
 	public void clearTasks()
@@ -93,27 +93,6 @@ public class TaskList
 		}
 	}
 
-	/**
-	 * toString()
-	 *
-	 * Returns a string in the format
-	 *
-	 * Act
-	 * CourseName
-	 *
-	 * For all Tasks
-	 *
-	 * Example:
-	 *
-	 * Midterm
-	 * CSCI 3700
-	 * HW7
-	 * CSCI 3700
-	 *
-	 *
-	 * @return
-	 */
-	@Override
 	public String toString()
 	{
 		String tl = null;
@@ -154,9 +133,6 @@ public class TaskList
 	 */
 	public boolean isEmpty()
 	{
-		if(tasklist.isEmpty())
-			return true;
-		else
-			return false;
+		return tasklist.isEmpty();
 	}
 }
