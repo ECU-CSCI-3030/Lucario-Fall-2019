@@ -293,7 +293,7 @@ public class CalendarList
      *
      * @return True if date exist, False if not.
      */
-    private boolean dateCheck(int month, int day, int year)
+    protected boolean dateCheck(int month, int day, int year)
     {
         if (month >= 1 && month <= 12)
         {
@@ -432,6 +432,26 @@ public class CalendarList
     }
 
 
+    /**
+     * calExists(year)
+     *
+     * Determines whether a calendar with the given 'year'. Is in the CalendarList
+     * @param year
+     * @return True if a calendar with the year 'year' is in the list. False if not.
+     */
+    public boolean calExists(int year)
+    {
+        Iterator<Calendar> iter = this.calendars.iterator();
+
+        Calendar current;
+        while(iter.hasNext())
+        {
+            current = iter.next();
+            if (current.getYear()==year)
+                return true;
+        }
+        return false;
+    }
 
 
 }

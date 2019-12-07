@@ -132,4 +132,22 @@ public class  Calendar
 		
 		tl.printTasks();
 	}
+
+
+	/**
+	 * isEqual(cal)
+	 *
+	 * Determines whether the Calendar calling the method
+	 * has the same year as Calendar 'cal'.
+	 * @param cal
+	 * @return True if the Calendar calling the method has the same year as Calendar 'cal'.
+	 * 		   False if not.
+	 */
+	public boolean isEqual(Calendar cal)
+	{
+		if(this.getYear()==cal.getYear())
+			return true;
+		else
+			return false;
+	}
 }

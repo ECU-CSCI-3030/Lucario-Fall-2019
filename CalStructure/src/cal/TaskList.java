@@ -93,4 +93,70 @@ public class TaskList
 		}
 	}
 
+	/**
+	 * toString()
+	 *
+	 * Returns a string in the format
+	 *
+	 * Act
+	 * CourseName
+	 *
+	 * For all Tasks
+	 *
+	 * Example:
+	 *
+	 * Midterm
+	 * CSCI 3700
+	 * HW7
+	 * CSCI 3700
+	 *
+	 *
+	 * @return
+	 */
+	@Override
+	public String toString()
+	{
+		String tl = null;
+		if(tasklist.isEmpty())
+		{
+			System.out.print("There are no tasks for this date");
+
+		}
+		else
+		{
+
+			Iterator<Task> iter = tasklist.iterator();
+
+			while (iter.hasNext()) {
+				tl += iter.next().toString() + "\n";
+			}
+		}
+		return tl;
+	}
+
+	/**
+	 * getTask(index)
+	 *
+	 * Returns the Task at the index 'index' in the tasklist.
+	 * @param index
+	 * @return the Task at index 'index' in the tasklist.
+	 */
+	public Task getTask(int index)
+	{
+		return tasklist.get(index);
+	}
+
+	/**
+	 * isEmpty()
+	 *
+	 * Determines whether the TaskList is empty
+	 * @return True if the list is empty. False if not.
+	 */
+	public boolean isEmpty()
+	{
+		if(tasklist.isEmpty())
+			return true;
+		else
+			return false;
+	}
 }
