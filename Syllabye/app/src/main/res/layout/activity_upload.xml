@@ -6,22 +6,46 @@
     android:gravity="center"
     android:background="@drawable/upload">
 
-    <TextView
-        android:id="@+id/fileText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="filepath" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="filepath" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/fileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose File to Upload" />
 
-    <Button
-        android:id="@+id/uploadFileButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload" />
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/fileButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:layout_marginBottom="38dp"
+            android:text="Choose File"
+            android:textColor="#FFFF" />
+
+        <Button
+            android:id="@+id/uploadFileButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:background="@color/colorButton"
+            android:layout_below="@id/fileButton"
+            android:text="Upload" />
+    </LinearLayout>
+
 
 </LinearLayout>
+
