@@ -7,6 +7,7 @@
 
 package edu.ecu.cs.syllabye.cal;
 
+@SuppressWarnings("serial")
 public class CalendarNotFoundException extends Exception
 {
     public CalendarNotFoundException ()

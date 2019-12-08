@@ -5,6 +5,9 @@
  * @author Tristen Schuler
  */
 
+
+
+
 package edu.ecu.cs.syllabye.cal;
 
 import java.util.*;
@@ -73,8 +76,5 @@ public class Month
 	public void clearTasks(int day)
 	{
 		month.get(day).clearTasks();
-	}
-	
-	
-	
+	}	
 }
