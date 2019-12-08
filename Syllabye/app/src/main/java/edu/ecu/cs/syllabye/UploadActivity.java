@@ -2,15 +2,22 @@ package edu.ecu.cs.syllabye;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,10 +26,13 @@ import com.nbsp.materialfilepicker.ui.FilePickerActivity;
 
 import java.util.regex.Pattern;
 
-public class UploadActivity extends AppCompatActivity {
+public class UploadActivity extends Activity {
 
     Button mFileButton;
+    Button mUploadFileButton;
     TextView mFileText;
+    ImageButton mPhotoButton;
+    private static final int REQUEST_PhOTO = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +58,23 @@ public class UploadActivity extends AppCompatActivity {
                         .start();
             }
         });
+
+        mUploadFileButton = (Button) findViewById(R.id.uploadFileButton);
+        mUploadFileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mPhotoButton = (ImageButton) findViewById(R.id.camera);
+        final Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        mPhotoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(cameraIntent, REQUEST_PhOTO);
+            }
+        });
     }
 
     @Override
@@ -59,6 +86,7 @@ public class UploadActivity extends AppCompatActivity {
             // Do anything with file
             mFileText.setText(filePath);
         }
+
     }
 
     @Override

@@ -44,6 +44,12 @@
             android:background="@color/colorButton"
             android:layout_below="@id/fileButton"
             android:text="Upload" />
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_camera" />
     </LinearLayout>
 
 
