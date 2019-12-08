@@ -4,7 +4,8 @@
     <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cal/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/CalendarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/CalendarList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cal/CalendarListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cal/CalendarListTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.CalendarListTest">
     <configuration default="true" type="AndroidJUnit" show_console_on_std_err="true" show_console_on_std_out="true">
       <module name="CalStructure" />
       <option name="PACKAGE_NAME" value="cal" />
@@ -179,7 +180,10 @@
       <workItem from="1575316876286" duration="4442000" />
       <workItem from="1575367532484" duration="780000" />
       <workItem from="1575737282687" duration="12785000" />
-      <workItem from="1575750930672" duration="2057000" />
+      <workItem from="1575750930672" duration="2660000" />
+      <workItem from="1575753654562" duration="910000" />
+      <workItem from="1575765387776" duration="826000" />
+      <workItem from="1575818878373" duration="3477000" />
     </task>
     <servers />
   </component>
