@@ -11,24 +11,29 @@
 package regexalg;
 
 import tess.TessOCR;
-//import cal.*;
-//import java.time.LocalDate;
-//import java.time.MonthDay;
-//import java.time.Year;
-//import java.time.format.*;
-//import java.time.temporal.TemporalAccessor;
+import cal.*;
+import java.time.LocalDate;
+import java.time.MonthDay;
+import java.time.Year;
+import java.time.format.*;
+import java.time.temporal.TemporalAccessor;
 import java.io.*;
-//import java.util.regex.*;
+import java.util.regex.*;
 
 public class RegexDet {
 	public static void main(String[] args) throws IOException {
 		String  imgPath = "C:\\Users\\Chick3n\\eclipse-workspace\\Tesseract\\Testing Data\\testIMG04.jpg";
 		TessOCR testing = new TessOCR(imgPath);
-		String r = testing.tessCall();
-		ParsingAlg.parsAlg(r);			//******giving error even though the code below works
+		String result = testing.tessCall();
+		ParsingAlg.parsAlg(result);
+		String result2 = "balfjaklh Monday, Sep 06 lkba;kgfhaset;oi Monday, September 06 iahfieah monday, sep 06";
+		String result3 = "abjksadhf 02/25/2019 kadfjah 05/15/2099 klsjdafl;kash Monday, February 07 aljgflauhea Tuesday, Feb 08 kjahdfah september 6 skalja; sep 06 kjsahflkajh 11/30 skafhas 09/15";
+		ParsingAlg.parsAlg(result2);
+		ParsingAlg.parsAlg(result3);
 	}
 }
-		//*******ctrl+/ ON ALL CODE BELOW AND IT WORKS
+		
+////		*******ctrl+/ ON ALL CODE BELOW AND IT WORKS
 //		String  imgPath = "C:\\Users\\Chick3n\\eclipse-workspace\\Tesseract\\Testing Data\\testIMG04.jpg";
 //		TessOCR testing = new TessOCR(imgPath);
 //		String result = testing.tessCall();

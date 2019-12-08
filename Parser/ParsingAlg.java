@@ -22,12 +22,13 @@ public class ParsingAlg {
 			{
 				//MONTH/DAY/YEAR
 				case 1:{
-					System.out.println("Case1\n");									//debugging purposes
+//					System.out.println("Case1\n");									//debugging purposes
 					p = Pattern.compile("(?:0[1-9]|1[0-2])/(?:[0-2]\\d|3[0-1])/(?:19\\d{2}|2\\d{3})");
 					m = p.matcher(result);
+					m.find();
 					
 					String dateTest = m.group();									
-					System.out.println("I printed out the date: " + dateTest); 		//debugging purposes
+//					System.out.println("I printed out the date: " + dateTest); 		//debugging purposes
 					
 					DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 							.parseCaseInsensitive()
@@ -39,17 +40,15 @@ public class ParsingAlg {
 					String yr = dateTest.substring(6);								//debugging purposes
 					int yrNum = Integer.parseInt(yr);								//debugging purposes
 
-					System.out.println("Year is: " + yr);   						//debugging purposes
+//					System.out.println("Year is: " + yr);   						//debugging purposes
 					
 					LocalDate parsedDate = monthDay.atYear(yrNum);
 					
 					int monthNum = parsedDate.getMonthValue();
 					int dayNum = parsedDate.getDayOfMonth();
-					System.out.println("Day number is: " + dayNum);					//debugging purposes
-					System.out.println("Month number is: " + monthNum);				//debugging purposes
-					System.out.println("Year number is: " + yrNum);					//debugging purposes
-					
-					//TODO insert monthNum and dayNum into scan list
+//					System.out.println("Day number is: " + dayNum);					//debugging purposes
+//					System.out.println("Month number is: " + monthNum);				//debugging purposes
+//					System.out.println("Year number is: " + yrNum);					//debugging purposes
 					
 					//this will eliminate all of the information we have already scanned.
 					try {
@@ -57,20 +56,20 @@ public class ParsingAlg {
 					} catch(IllegalStateException e) {
 						System.out.print("EOS ");
 					}
-					System.out.println("The result is now:\n\n " + result + "\n\n");	//debugging purposes
-					slist.addScannedTask(monthNum, dayNum);
-					
+//					System.out.println("The result is now:\n\n " + result + "\n\n");	//debugging purposes
+					slist.addScannedTask(monthNum, dayNum);				
 					break;
 				}
 				//DAYofWEEK MONTHNAME DAY
 				case 2:{
-					System.out.println("Case2\n");									//debugging purposes
+//					System.out.println("Case2\n");									//debugging purposes
 					p = Pattern.compile("([sS]unday|[mM]onday|[tT]uesday|[wW]ednesday|[tT]hursday|[fF]riday|[sS]aturday),? ((?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?)) ([0-2]\\d|3[0-1]|[1-9])");
 					m = p.matcher(result);
 					m.matches();
+					m.find();
 					
 					String dateTest = m.group();
-					System.out.println("I printed out the date: " + dateTest);		//debugging purposes
+//					System.out.println("I printed out the date: " + dateTest);		//debugging purposes
 					
 					//abbreviated MONTHNAME else it is full month name
 					if(m.group(2).length() == 3) {
@@ -84,8 +83,8 @@ public class ParsingAlg {
 						LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 						int monthNum = parsedDate.getMonthValue();
 						int dayNum = parsedDate.getDayOfMonth();
-						System.out.println("Day number is: " + dayNum);				//debugging purposes
-						System.out.println("Month number is: " + monthNum);			//debugging purposes
+//						System.out.println("Day number is: " + dayNum);				//debugging purposes
+//						System.out.println("Month number is: " + monthNum);			//debugging purposes
 						
 						slist.addScannedTask(monthNum, dayNum);
 					}
@@ -99,8 +98,8 @@ public class ParsingAlg {
 						LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 						int monthNum = parsedDate.getMonthValue();
 						int dayNum = parsedDate.getDayOfMonth();
-						System.out.println("Day number is: " + dayNum);				//debugging purposes
-						System.out.println("Month number is: " + monthNum);			//debugging purposes
+//						System.out.println("Day number is: " + dayNum);				//debugging purposes
+//						System.out.println("Month number is: " + monthNum);			//debugging purposes
 						
 						slist.addScannedTask(monthNum, dayNum);
 					}
@@ -111,16 +110,18 @@ public class ParsingAlg {
 					} catch(IllegalStateException e) {
 						System.out.print("EOS ");
 					}
-					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
+//					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
 					break;
 				}
 				//MONTHNAME DAY
 				case 3:{
-					System.out.println("Case3\n");									//debugging purposes
+//					System.out.println("Case3\n");									//debugging purposes
 					p = Pattern.compile("((?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?)) ([0-2][0-9]|3[0-1]|[1-9])");
 					m = p.matcher(result);
+					m.find();
 					
 					String dateTest = m.group();
+//					System.out.println("I printed out the date: " + dateTest);		//debugging purposes
 					
 					//DAY = two digits --> 06, 23, 31... so on
 					if(m.group(2).length() == 2 ) {
@@ -136,8 +137,8 @@ public class ParsingAlg {
 							LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 							int monthNum = parsedDate.getMonthValue();
 							int dayNum = parsedDate.getDayOfMonth();
-							System.out.println("Day number is: " + dayNum);			//debugging purposes
-							System.out.println("Month number is: " + monthNum);		//debugging purposes
+//							System.out.println("Day number is: " + dayNum);			//debugging purposes
+//							System.out.println("Month number is: " + monthNum);		//debugging purposes
 							
 							slist.addScannedTask(monthNum, dayNum);
 						}
@@ -153,8 +154,8 @@ public class ParsingAlg {
 							LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 							int monthNum = parsedDate.getMonthValue();
 							int dayNum = parsedDate.getDayOfMonth();
-							System.out.println("Day number is: " + dayNum);			//debugging purposes
-							System.out.println("Month number is: " + monthNum);		//debugging purposes
+//							System.out.println("Day number is: " + dayNum);			//debugging purposes
+//							System.out.println("Month number is: " + monthNum);		//debugging purposes
 							
 							slist.addScannedTask(monthNum, dayNum);
 						}
@@ -173,8 +174,8 @@ public class ParsingAlg {
 							LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 							int monthNum = parsedDate.getMonthValue();
 							int dayNum = parsedDate.getDayOfMonth();
-							System.out.println("Day number is: " + dayNum);			//debugging purposes
-							System.out.println("Month number is: " + monthNum);		//debugging purposes
+//							System.out.println("Day number is: " + dayNum);			//debugging purposes
+//							System.out.println("Month number is: " + monthNum);		//debugging purposes
 							
 							slist.addScannedTask(monthNum, dayNum);
 						}
@@ -189,8 +190,8 @@ public class ParsingAlg {
 							LocalDate parsedDate = monthDay.atYear(Year.now().getValue());
 							int monthNum = parsedDate.getMonthValue();
 							int dayNum = parsedDate.getDayOfMonth();
-							System.out.println("Day number is: " + dayNum);			//debugging purposes
-							System.out.println("Month number is: " + monthNum);		//debugging purposes
+//							System.out.println("Day number is: " + dayNum);			//debugging purposes
+//							System.out.println("Month number is: " + monthNum);		//debugging purposes
 							
 							slist.addScannedTask(monthNum, dayNum);
 						}
@@ -202,18 +203,18 @@ public class ParsingAlg {
 					} catch(IllegalStateException e) {
 						System.out.print("EOS ");
 					}
-					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
+//					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
 					break;
 				}
 				//MONTH/DAY
-				case 4:{															//debugging purposes
-					System.out.println("Case4\n");
+				case 4:{
+//					System.out.println("Case4\n");									//debugging purposes
 					p = Pattern.compile("(?:0[1-9]|1[0-2])/(?:[0-2]\\d|3[0-1])");
 					m = p.matcher(result);
-					//If the pattern is found, then it will write to file
+					m.find();
 					
 					String dateTest = m.group();
-					System.out.println("I printed out the date: " + dateTest); 		//debugging purposes
+//					System.out.println("I printed out the date: " + dateTest); 		//debugging purposes
 					
 					DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 							.parseCaseInsensitive()
@@ -225,8 +226,8 @@ public class ParsingAlg {
 					
 					int monthNum = parsedDate.getMonthValue();
 					int dayNum = parsedDate.getDayOfMonth();
-					System.out.println("Day number is: " + dayNum);					//debugging purposes
-					System.out.println("Month number is: " + monthNum);				//debugging purposes
+//					System.out.println("Day number is: " + dayNum);					//debugging purposes
+//					System.out.println("Month number is: " + monthNum);				//debugging purposes
 					
 					//this will eliminate all of the information we have already scanned.
 					try {
@@ -236,7 +237,7 @@ public class ParsingAlg {
 					}
 					
 					slist.addScannedTask(monthNum, dayNum);
-					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
+//					System.out.println("The result is now:\n\n " + result + "\n\n");//debugging purposes
 					break;
 					}
 				}
