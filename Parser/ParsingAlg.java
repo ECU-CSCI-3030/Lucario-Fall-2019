@@ -1,3 +1,16 @@
+/*
+ * Authors: Jameson Bergstedt and Leonardo Espinoza
+ * 
+ * Demonstrates how to extract multiple "groups" from a given string
+ * using regular expressions and the Pattern and Matcher classes.
+ * 
+ * Note: "\\S" means "A non-whitespace character".
+ * @see http://java.sun.com/j2se/1.5.0/docs/api/java/util/regex/Pattern.html
+ * To use:
+ * 			Import ParsingAlg class and pass a string s by using
+ * 			ParsingAlg.parsAlg(s);
+ */
+
 package regexalg;
 
 import java.time.LocalDate;
@@ -10,6 +23,11 @@ import ScanTest.*;
 
 public class ParsingAlg {
 	
+	/**
+	 * parsAlg(result) parses the given dates in result string.
+	 * 
+	 * @param result String that is parsed.
+	 */
 	public static void parsAlg(String result) {
 		ScanList slist = new ScanList();
 		Pattern p;
@@ -245,6 +263,13 @@ public class ParsingAlg {
 		while(x!=0);
 		}
 
+	/**
+	 * getPat(result) returns an integer after it matches "result" with a
+	 * regular expression. If no match is found, it returns 0.
+	 * 
+	 * @param result The string to be matched with a RegEx pattern
+	 * @return
+	 */
 	private static int getPat(String result) {
 		String pat1 = "(?:0[1-9]|1[0-2])/(?:[0-2]\\d|3[0-1])/(?:19\\d{2}|2\\d{3})";
 		String pat2 = "([sS]un|[mM]on|[tT]ues|[wW]ednes|[tT]hurs|[fF]ri|[sS]atur)day,? .*((?:[jJ]an(?:uary)?|[fF]eb(?:ruary)?|[mM]ar(?:ch)?|[aA]pr(?:il)?|[mM]ay?|[jJ]un(?:e)?|[jJ]ul(?:y)?|[aA]ug(?:ust)?|[sS]ep(?:t(?:ember)?)?|[oO]ct(?:ober)?|[nN]ov(?:ember)?|[dD]ec(?:ember)?)) .*([0-2]\\d|3[0-1]|[1-9]).*";
