@@ -129,4 +129,21 @@ public class CalendarListTest
 
 
     }
+
+    @Test
+    public void inputFromString()
+    {
+        CalendarList cl = new CalendarList();
+
+        String input = "Midterm\n12/2/2019\nCSCI 3700\n" +
+                       "HW7\n11/24/2019\nCSCI 3700\n" +
+                       "Status Report\n11/9/2019\nCSCI 3030";
+
+        cl.inputFromString(input);
+
+        assertFalse(cl.getTasks(12,2,2019).isEmpty());
+        assertFalse(cl.getTasks(11,24,2019).isEmpty());
+        assertFalse(cl.getTasks(11,9,2019).isEmpty());
+    }
+
 }
