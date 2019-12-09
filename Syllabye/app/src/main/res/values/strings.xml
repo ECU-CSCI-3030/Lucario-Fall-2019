@@ -4,4 +4,13 @@
     <string name="reminders_button">Reminders</string>
     <string name="upload_button">Upload File</string>
     <string name="settings_button">Settings</string>
+
+    <string-array name="names">
+        <item>Assignment</item>
+        <item>Quiz</item>
+        <item>Exam</item>
+        <item>Midterm</item>
+        <item>Final</item>
+        <item>Custom</item>
+    </string-array>
 </resources>

@@ -30,6 +30,7 @@ public class UploadActivity extends Activity {
 
     Button mFileButton;
     Button mUploadFileButton;
+    Button mDoneButton;
     TextView mFileText;
     
     // Scrapped camera feature variables
@@ -68,6 +69,18 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
 
             }
+
+        });
+
+        mDoneButton = (Button) findViewById(R.id.doneButton);
+        mDoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start LabelActivity
+                Intent intent = new Intent(UploadActivity.this, LabelActivity.class);
+                startActivity(intent);
+            }
+
         });
 
         /* The start of the camera feature issue, but was scrapped
