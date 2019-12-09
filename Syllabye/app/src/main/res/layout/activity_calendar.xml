@@ -23,6 +23,15 @@
 
     </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_add_event"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="ADD ASSIGNMENT"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"/>
+
 
 
 </LinearLayout>
