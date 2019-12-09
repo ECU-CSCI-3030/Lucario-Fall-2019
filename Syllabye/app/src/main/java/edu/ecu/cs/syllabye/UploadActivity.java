@@ -31,8 +31,10 @@ public class UploadActivity extends Activity {
     Button mFileButton;
     Button mUploadFileButton;
     TextView mFileText;
-    ImageButton mPhotoButton;
-    private static final int REQUEST_PhOTO = 2;
+    
+    // Scrapped camera feature variables
+    //ImageButton mPhotoButton;
+    //private static final int REQUEST_PhOTO = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,7 @@ public class UploadActivity extends Activity {
             }
         });
 
+
         mUploadFileButton = (Button) findViewById(R.id.uploadFileButton);
         mUploadFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +70,7 @@ public class UploadActivity extends Activity {
             }
         });
 
+        /* The start of the camera feature issue, but was scrapped
         mPhotoButton = (ImageButton) findViewById(R.id.camera);
         final Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         mPhotoButton.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +79,8 @@ public class UploadActivity extends Activity {
                 startActivityForResult(cameraIntent, REQUEST_PhOTO);
             }
         });
+
+         */
     }
 
     @Override

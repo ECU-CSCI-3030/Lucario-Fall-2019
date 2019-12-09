@@ -454,6 +454,79 @@ public class CalendarList
     }
 
 
+    /**
+     * inputFromString(String input)
+     *
+     * Inputs the information from 'input' into the CalendarList
+     *
+     * In the format:
+     *
+     * Act
+     * Date (MM/DD/YYYY)
+     * Course
+     * Act
+     * Date (MM/DD/YYYY)
+     * Course
+     *
+     * Example Input:
+     *
+     * Midterm
+     * 10/2/2019
+     * CSCI 3700
+     * HW5
+     * 10/24/2019
+     * CSCI 3700
+     * Status Report
+     * 11/9/2019
+     * CSCI 3030
+     *
+     * It will input any amount of acts into the CalendarList as long as they are followed
+     * by the Date and Course.
+     *
+     */
+    public void inputFromString(String input)
+    {
+        Scanner inputscan = new Scanner(input);
+        String act,date,course,m,d,y;
+        int month,day,year;
+        while (inputscan.hasNextLine())
+        {
+            act = inputscan.nextLine();
+
+            date = inputscan.nextLine();
+
+            course = inputscan.nextLine();
+
+
+            m = date.substring(0, date.indexOf('/'));
+            d = date.substring(date.indexOf('/')+1,date.lastIndexOf('/'));
+            y = date.substring(date.lastIndexOf('/')+1);
+            month = Integer.parseInt(m);
+            day = Integer.parseInt(d);
+            year = Integer.parseInt(y);
+
+            if(!calExists(year))
+                addCalendar(year);
+
+
+            this.addTask(month,day,year,new Task(act,course));
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
