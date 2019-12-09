@@ -1,11 +1,3 @@
-/**
- * Task
- * 
- * Represents a task in the calendar structure. 
- * @author Tristen Schuler
- */
-
-
 package cal;
 
 public class Task 
@@ -81,13 +73,8 @@ public class Task
 		
 		String ctest1 = this.course.toLowerCase();
 		String ctest2 = t.course.toLowerCase();
-		
-		if(atest1.equals(atest2) && ctest1.equals(ctest2))
-		{
-			return true;
-		}
-		else
-			return false; 
+
+		return atest1.equals(atest2) && ctest1.equals(ctest2);
 	}
 	
 

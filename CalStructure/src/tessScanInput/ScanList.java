@@ -1,15 +1,3 @@
-/**
- *ScanList
- *
- *Used in conjunction with the ScanToInput class to create
- *a LinkedList of ScannedTask with the dates scanned from
- *the file given. The user then gives an "act" for each
- *ScannedTask. Then with the inputList method all ScannedTask
- *in the List are added to the Calendar Structure.
- *
- * @author - Tristen Schuler
- */
-
 package tessScanInput;
 
 import java.util.Iterator;
@@ -119,10 +107,7 @@ public class ScanList
      */
     private boolean isEqual(ScannedTask st, String date)
     {
-        if (st.getDate().equalsIgnoreCase(date))
-            return true;
-        else
-            return false;
+        return st.getDate().equalsIgnoreCase(date);
     }
 
     /**
