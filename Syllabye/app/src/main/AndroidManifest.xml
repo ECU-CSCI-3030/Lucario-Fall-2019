@@ -22,6 +22,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TesseractActivity"></activity>
         <activity
+            android:name=".LabelActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".UploadActivity"
             android:screenOrientation="portrait" />
         <activity

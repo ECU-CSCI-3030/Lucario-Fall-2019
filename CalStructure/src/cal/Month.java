@@ -1,13 +1,3 @@
-/**
- * Month
- * 
- * Represents a month in the calendar structure. 
- * @author Tristen Schuler
- */
-
-
-
-
 package cal;
 
 import java.util.*;

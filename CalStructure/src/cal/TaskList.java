@@ -1,11 +1,3 @@
-
-/**
- * TaskList
- *
- * Represents a list of tasks in the calendar structure. 
- * @author Tristen Schuler
- */
-
 package cal;
 
 import java.util.*;
@@ -95,7 +87,7 @@ public class TaskList
 
 	public String toString()
 	{
-		String tl = null;
+		StringBuilder tl = null;
 		if(tasklist.isEmpty())
 		{
 			System.out.print("There are no tasks for this date");
@@ -107,10 +99,10 @@ public class TaskList
 			Iterator<Task> iter = tasklist.iterator();
 
 			while (iter.hasNext()) {
-				tl += iter.next().toString() + "\n";
+				tl.append(iter.next().toString()).append("\n");
 			}
 		}
-		return tl;
+		return tl.toString();
 	}
 
 	/**

@@ -1,10 +1,3 @@
-/**
- * Calendar
- * 
- * Represents a single calendar in the calendar structure 
- * @author Tristen Schuler
- */
-
 package cal;
 
 import java.util.*;
@@ -145,9 +138,6 @@ public class  Calendar
 	 */
 	public boolean isEqual(Calendar cal)
 	{
-		if(this.getYear()==cal.getYear())
-			return true;
-		else
-			return false;
+		return this.getYear() == cal.getYear();
 	}
 }

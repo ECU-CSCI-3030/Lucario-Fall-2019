@@ -1,14 +1,3 @@
-/**
- * ScannedTask
- *
- * Holds an act and date as a String.
- * Also holds a month and day as an int.
- * Used in conjunction with the ScanList class to input into the Calendars Structure.
- *
- * @author Tristen Schuler
- */
-
-
 package tessScanInput;
 
 public class ScannedTask {

@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="76168e97-433b-4fdd-9f15-713a2be13c31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalStructure/cal/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Calendar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cal/CalendarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/CalendarList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/cal/CalendarListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cal/CalendarListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/CalendarNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/CalendarNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Month.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cal/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cal/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tessScanInput/ScanList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tessScanInput/ScannedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tessScanInput/ScannedTask.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +36,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -48,6 +58,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -61,26 +73,15 @@
       <recent name="C:\Users\Tristen\Documents\ECU\3030\CalStructure" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="JUnit.CalendarListTest">
-    <configuration default="true" type="AndroidJUnit" show_console_on_std_err="true" show_console_on_std_out="true">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit" show_console_on_std_err="true" show_console_on_std_out="true">
       <module name="CalStructure" />
       <option name="PACKAGE_NAME" value="cal" />
       <option name="MAIN_CLASS_NAME" value="cal.CalendarListTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,6 +161,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -183,7 +196,10 @@
       <workItem from="1575750930672" duration="2660000" />
       <workItem from="1575753654562" duration="910000" />
       <workItem from="1575765387776" duration="826000" />
-      <workItem from="1575818878373" duration="3477000" />
+      <workItem from="1575818878373" duration="4077000" />
+      <workItem from="1575853714461" duration="653000" />
+      <workItem from="1575856057888" duration="607000" />
+      <workItem from="1575860265427" duration="1886000" />
     </task>
     <servers />
   </component>
@@ -202,5 +218,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="624" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575862204150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575862204150" />
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1575862158612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575862158612" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1575862158612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575862158612" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1575862158612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575862158612" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1575862158612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575862158612" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1575860455796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575860455796" />
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1575860265340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.177.1600.860@0.0.1920.1040" timestamp="1575860265340" />
   </component>
 </project>

@@ -11,7 +11,9 @@
         android:layout_height="120dp"
         android:layout_marginTop="75dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
+
         <TextView
             android:id="@+id/fileText"
             android:layout_width="wrap_content"
@@ -42,8 +44,18 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFF"
             android:background="@color/colorButton"
+
             android:layout_below="@id/fileButton"
             android:text="Upload" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:background="@color/colorButton"
+            android:layout_below="@id/fileButton"
+            android:text="Done" />
 
 
         <!-- Camera Feature Scrapped
