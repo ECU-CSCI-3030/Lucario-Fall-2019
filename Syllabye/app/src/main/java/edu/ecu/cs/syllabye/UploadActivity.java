@@ -67,7 +67,9 @@ public class UploadActivity extends Activity {
         mUploadFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Start TesseractActivity
+                Intent intent = new Intent(UploadActivity.this, TesseractActivity.class);
+                startActivity(intent);
             }
 
         });
