@@ -4,7 +4,7 @@ import java.io.*;
 import net.sourceforge.tess4j.*;
 import java.util.regex.*;
 
-public class test {
+public class caseStatement {
 	public static void main(String[] args) throws IOException{
 			
 			
